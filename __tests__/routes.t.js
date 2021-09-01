@@ -6,7 +6,7 @@ import router from '../routes/main.js';
 const app = new express();
 app.use('/', router);
 
-describe('Bad API Routes', function () {
+describe('Good Home Routes', function () {
 
   test('responds to /', async () => {
     const res = await request(app).get('/');
