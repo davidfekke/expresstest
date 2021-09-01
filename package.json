@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "node --experimental-vm-modules node_modules/.bin/jest --detectOpenHandles",
+        "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage --detectOpenHandles",
         "start": "node app.js"
     },
     "keywords": [],
