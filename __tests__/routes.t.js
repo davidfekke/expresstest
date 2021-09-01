@@ -19,14 +19,14 @@ describe('Bad API Routes', function () {
     const res = await request(app).get('/hello/jaxnode'); 
     expect(res.header['content-type']).toBe('text/html; charset=utf-8');
     expect(res.statusCode).toBe(200);
-    expect(res.text).toEqual('hello jaxnode');
+    expect(res.text).toEqual('hello jaxnode!');
   });
 
   test('responds to /hello/Annie', async () => {
     const res = await request(app).get('/hello/Annie'); 
     expect(res.header['content-type']).toBe('text/html; charset=utf-8');
     expect(res.statusCode).toBe(200);
-    expect(res.text).toEqual('hello Annie');
+    expect(res.text).toEqual('hello Annie!');
   });
 
 });
